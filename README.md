@@ -14,7 +14,7 @@ complete the order</li>
   <li> IDE: IntelliJ IDEA 2017.1</li>
 </ul>
 <h3>Framework Overview</h3>
-<p>The framework is based on page object design pattern. I have provided two approach for automating these scenarios one in using TestNG and another one is BDD using cucumber.The major components of the framework are:</p>
+<p>The framework is based on page object design pattern. I have provided two approaches for automating these scenarios. The fist one is using TestNG and second one is BDD using cucumber. User can choose any of the approach for automating tests. The major components of the framework are:</p>
 <ul><li> DriverFactory: singleton Class to intialize the Web Driver</li> <li> BaseClass: Contians all the reusable methods like find element, isElementPresent, GetElementText etc..</li><li>PageObjects: Application pages containing page methods and locators</li>
   <li>CentralData.Property: Containing Web application specific data such as Browser,Wait Timeout, App Url etc.. </li>
   <li>TestNGtests: Containing TestNg tests</li>
@@ -35,8 +35,10 @@ complete the order</li>
   <li>Run the "src/test/java/resources/testng/testng.xml" file</li></ul>
   <h3> Running TestNG tests through command line</h3>
   <ul>
-  <li> Execute the maven goal <b>mvn clean install -Dbrowser=Chrome</b>  in the project directory.</li></u>
+  <li> Execute the maven goal <b>mvn clean install -Dbrowser=Chrome</b>  in the project directory.</li></ul>
  <br/>
  <h3>Running Cucumber Tests:</h3>
  <p>Run the "src/test/java/runner/CucumberTestRunner.java" class</p>
+ <h3> Cucumber Html output:</h3>
+ <p> After running the tests, execute the maven goal <b> mvn cluecumber-report:reporting</b> and it will generate a HTML output report in "target/generated-report" folder</p>
   </ul>
